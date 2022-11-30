@@ -1,0 +1,278 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********************************************************************/
+@font-face {
+  font-family: Roboto;
+  src:url("https://fonts.google.com/specimen/Roboto?query=roboto");
+}
+@font-face {
+    font-family: Han Sans TW;
+    src:url("https://fonts.google.com/noto/specimen/Noto+Sans+TC");
+  }
+
+.header{
+
+    width: 100%;
+    height: 80px;
+    background: #AA0601;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.header img{
+    height: 49px;
+}
+.header ul{
+    display: flex;
+}
+.header li{
+    color: white;
+    margin:0px 32px;
+}
+.banner{
+    display: flex;
+}
+.banner img{
+    width: 100%;
+    z-index: 1;
+}
+.banner .bannerContentBox{
+    position: absolute;
+    margin-top:296px;
+    right: 311px;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction:column;
+    align-items:flex-end;
+}
+.banner .bannerContentBox h2{
+    font-size: 36px;
+    color: #650300;
+    font-family: 'Han Sans TW';
+    font-weight: normal;
+    padding:10px 0;
+}
+.banner .bannerContentBox h1{
+    font-size: 64px;
+    color: #650300;
+    font-family: 'Han Sans TW';
+    font-weight: bold;
+    padding:10px 0;
+}
+.banner .bannerContentBox button{
+    font-size: 20px;
+    color: white;
+    background: #AA0601;
+    padding:6px 12px;
+    font-family: 'Han Sans TW';
+    border: none;
+}
+.contentSection h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #650300;
+    font-family: 'Han Sans TW';
+    display: block;
+    text-align: center;
+}
+.contentSection h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #650300;
+    font-family: 'Han Sans TW';
+    text-align: center;
+    margin-top: 24px;
+}
+.contentSection p{
+    width: 306px;
+    font-size: 16px;
+    color: black;
+    font-family: 'Han Sans TW';
+    text-align: left;
+    margin-top: 8px;
+    line-height: 24px;
+}
+.contentSection{
+
+    width: 100%;
+    padding-top: 80px;
+
+}
+.first .itemOuterBox{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+
+}
+.first .itemBox{
+
+    text-align: center;
+    width: 306px;
+    margin: 0px 12px;
+
+}
+.first .itemBox img{
+    width: 83px; 
+}
+.second{
+    margin-top: 180px;
+}
+.second .itemOuterBox{
+
+    display: flex;
+    justify-content:center;
+    margin-top: 36px;
+
+}
+.second .itemBox{
+
+    text-align: center;
+    margin: 0px 12px;
+    width: 416px;
+
+}
+.second .itemBox img{
+    width: 416px;
+    height: 416px;
+}
+.second .itemBox h1{
+    font-family: 'Roboto';
+    font-style: italic;
+    color: #AA0601;
+}
+
+.third{
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+}
+.third img{
+    width: 100%;
+    height: 608px;
+}
+.third h1{
+    position: absolute;
+    margin-top:80px;
+    z-index: 2;
+    font-family: 'Roboto';
+    color: white;
+}
+.third .itemOuterBox{
+
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    margin-top: 200px;
+
+}
+.third .itemBox{
+
+    text-align: center;
+    width: 648px;
+
+}
+.third .itemBox img{
+    width: 648px;
+    height: 240px;
+ 
+}
+.third .itemBox h1{
+    width: 648px;
+    background: white;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: bold;
+    color: #AA0601;
+    text-align: center;
+    padding: 20px 0px;
+    margin-top:-4px;
+}
+
+.fourth{
+    
+    display: flex;
+    justify-content: center;
+}
+.fourth img{
+    width: 100%;
+    height: 608px;
+}
+.fourth h1{
+    font-family: 'Roboto';
+    color: #650300;
+}
+.fourth .itemOuterBox{
+
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    margin-top: 200px;
+
+}
+.fourth .itemBox{
+
+    text-align: center;
+    width: 648px;
+
+}
+.fourth .itemBox img{
+    width: 648px;
+    height: 240px;
+ 
+}
+.fourth .itemBox h1{
+    width: 648px;
+    background: white;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: bold;
+    color: #AA0601;
+    text-align: center;
+    padding: 20px 0px;
+    margin-top:-4px;
+}
